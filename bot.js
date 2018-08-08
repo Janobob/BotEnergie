@@ -73,8 +73,8 @@ function selectRightAnswer(){
     else if($(document.getElementById("500")).length == 1){
         $(document.getElementById("500")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("40")).length == 1){
-        $(document.getElementById("40")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("20")).length == 1){
+        $(document.getElementById("20")).prop("checked", true).trigger("click");
     }
     else if($(document.getElementById("La Cintura")).length == 1){
         $(document.getElementById("La Cintura")).prop("checked", true).trigger("click");
@@ -85,8 +85,8 @@ function selectRightAnswer(){
     else if($(document.getElementById("One Republic")).length == 1){
         $(document.getElementById("One Republic")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("1600")).length == 1){
-        $(document.getElementById("1600")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("1000")).length == 1){
+        $(document.getElementById("1000")).prop("checked", true).trigger("click");
     }
     else if($(document.getElementById("Mis Huus dis Huus")).length == 1){
         $(document.getElementById("Mis Huus dis Huus")).prop("checked", true).trigger("click");
@@ -115,11 +115,11 @@ function selectRightAnswer(){
     else if($(document.getElementById("70 Meter")).length == 1){
         $(document.getElementById("70 Meter")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("Fünf Kilo Schweizer Schoggi in der Garderobe")).length == 1){
-        $(document.getElementById("Fünf Kilo Schweizer Schoggi in der Garderobe")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("Eine komplett weisse Garderobe")).length == 1){
+        $(document.getElementById("Eine komplett weisse Garderobe")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("Mit dem Zug")).length == 1){
-        $(document.getElementById("Mit dem Zug")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("Im Privatjet")).length == 1){
+        $(document.getElementById("Im Privatjet")).prop("checked", true).trigger("click");
     }
     else if($(document.getElementById("Energy Air findet trotzdem statt")).length == 1){
         $(document.getElementById("Energy Air findet trotzdem statt")).prop("checked", true).trigger("click");
