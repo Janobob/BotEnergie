@@ -73,8 +73,8 @@ function selectRightAnswer(){
     else if($(document.getElementById("500")).length == 1){
         $(document.getElementById("500")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("20")).length == 1){
-        $(document.getElementById("20")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("40")).length == 1){
+        $(document.getElementById("40")).prop("checked", true).trigger("click");
     }
     else if($(document.getElementById("La Cintura")).length == 1){
         $(document.getElementById("La Cintura")).prop("checked", true).trigger("click");
