@@ -94,8 +94,8 @@ function selectRightAnswer(){
     else if($(document.getElementById("Um 17 Uhr")).length == 1){
         $(document.getElementById("Um 17 Uhr")).prop("checked", true).trigger("click");
     }
-    else if($(document.getElementById("...der unter freiem Himmel stattfindet.")).length == 1){
-        $(document.getElementById("...der unter freiem Himmel stattfindet.")).prop("checked", true).trigger("click");
+    else if($(document.getElementById("…der unter freiem Himmel stattfindet.")).length == 1){
+        $(document.getElementById("…der unter freiem Himmel stattfindet.")).prop("checked", true).trigger("click");
     }
     else if($(document.getElementById("Dimitri Vegas & Like Mike")).length == 1){
         $(document.getElementById("Dimitri Vegas & Like Mike")).prop("checked", true).trigger("click");
