@@ -1,4 +1,5 @@
 var speed = 200;
+var running = true;
 
 function selectRightAnswer(){
     if($(document.getElementById("Bastian Baker")).length == 1){
@@ -134,7 +135,8 @@ function sleep(ms) {
 }
 
 async function play(){
-    while(true){
+    running = true;
+    while(running){
         while($("#next-question").length > 0){
             selectRightAnswer();
             await sleep(speed);
@@ -151,4 +153,8 @@ async function play(){
         }
         await sleep(speed);
     }
+}
+
+function stop(){
+    running = false;
 }
