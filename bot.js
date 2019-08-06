@@ -54,7 +54,8 @@ async function play(){
             await sleep(speed);
         }
         await sleep(speed);
-        $(document.getElementsByClassName("circle")).find("img").trigger("click");
+        var circles = document.getElementsByClassName("circle");
+        $($(circles)[getRandomInt($(circles).length)]).find("img").trigger("click");
         await sleep(speed);
         $(".pulse").trigger("click");
         await sleep(speed);
@@ -67,4 +68,8 @@ async function play(){
 
 function stop(){
     running = false;
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
 }
