@@ -1,35 +1,50 @@
-var speed = 200;
+var speed = 2000;
 var running = true;
+var selectMode = ".tickets"; //".partner-price" for lipo
 
 var answerArray = [
-    "One Republic",
-    "1300",
-    "gewinnen",
-    "XTRA-Circle",
+    "Hallenstadion, Zürich",
+    "22. November 2019",
     "Twitter",
-    "E-Mail",
-    "2014",
-    "450 Tonnen",
-    "70 Meter",
-    "Die sechste",
+    "Swisscom",
+    "«The Game Is On»",
+    "Über 1'000'000",
+    "Mark Forster",
+    "VIP",
+    "#esn19",
+    "Möbel",
+    "Energy Star Night findet trotzdem statt",
+    "Ein Schweizer Musikpreis",
+    "Oktober 2016",
+    "Energy Star Night 2018",
+    "Usgang.ch",
+    "Graubünden",
+    "Energy Stars For Free",
+    "Die siebzehnte",
     "Lo & Leduc",
-    "im Radio, auf der Website und über Social Media",
-    "40’000",
-    "Energy Air findet trotzdem statt",
-    "Im Privatjet",
-    "Stade de Suisse, Bern",
-    "Bastian Baker",
-    "60",
-    "Um 17 Uhr",
-    "250",
-    "Alvaro Soler",
-    "14",
-    "...der unter freiem Himmel stattfindet.",
-    "Averdeck",
-    "Sein Mami",
-    "Eine komplett weisse Garderobe",
-    "BSC Young Boys",
-    "7. September 2019"
+    "Hiltl Club, Zürich",
+    "Mex",
+    "Reinach (Kanton Basel)",
+    "gewinnen",
+    "Die tiefsten Preise der Schweiz",
+    "Orange",
+    "Jastina Doreen, Ex-Miss Schweiz",
+    "Twitter",
+    "Stefanie Heinzmann",
+    "14'000",
+    "Winterthur und Villeneuve",
+    "2",
+    "Über 1'000'000",
+    "dem Schweizerischen Roten Kreuz",
+    "Hallenstadion, Zürich",
+    "Vorhänge individuell konfigurieren",
+    "2003",
+    "22. November 2019",
+    "E-Mail",
+    "Um 19:00 Uhr",
+    "im Radio, auf der Event-Website und über Social Media",
+    "22",
+    "das zweitgrösste Musik-Event der Schweiz!"
 ];
 
 function selectRightAnswer(){
@@ -53,13 +68,18 @@ async function play(){
             $("#next-question").trigger("click");
             await sleep(speed);
         }
+	await sleep(speed);
+	$(selectMode).trigger("click");
         await sleep(speed);
         var circles = document.getElementsByClassName("circle");
         $($(circles)[getRandomInt($(circles).length)]).find("img").trigger("click");
         await sleep(speed);
         $(".pulse").trigger("click");
         await sleep(speed);
-        if($(".game-button").length == 1){
+        if($("#lose").length == 1){
+            $("#lose").trigger("click");
+        }
+	if($(".game-button").length == 1){
             $(".game-button").trigger("click");
         }
         await sleep(speed);
